@@ -1,0 +1,168 @@
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #333;
+  color: #f4f4f4;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+body:hover {
+  color: skyblue;
+  transition: color 0.3s;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+section h1 {
+  font-size: 4rem;
+}
+section#home {
+  background: url("https://www.hdwallpapers.in/download/smiley_cristiano_ronaldo_cr7_is_sitting_in_blur_white_net_background_wearing_red_black_sports_dress_hd_cristiano_ronaldo-1920x1080.jpg") no-repeat center center/cover;
+}
+section#about {
+  background: url("https://pbs.twimg.com/media/Fwe2fXGaUAAftUx.jpg") no-repeat center center/cover;
+}
+section#service {
+  background: url("https://i.pinimg.com/originals/14/26/fe/1426fe3c1434b80a81a4d427050ba140.jpg") no-repeat center center/cover;
+}
+section#contact {
+  background: url("https://source.unsplash.com/2aAHlfDOhJM/1600x900") no-repeat center center/cover;
+}
+
+.about-col {
+  background: rgba(255, 255, 255, 0.7);
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-animation: bounce 1s infinite ease-in-out;
+          animation: bounce 1s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.about-col h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  -webkit-animation: bounce 1s infinite ease-in-out;
+          animation: bounce 1s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.about-col .lead {
+  font-size: 16px;
+  color: black;
+  -webkit-animation: bounce 1s infinite ease-in-out;
+          animation: bounce 1s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(189, 28, 28, 0.7);
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #12692b;
+}
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+.celebration-text {
+  align-self: flex-start;
+  width: 500px;
+  margin-left: 50px;
+}/*# sourceMappingURL=style.css.map */

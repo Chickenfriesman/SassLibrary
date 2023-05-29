@@ -1,0 +1,32 @@
+@mixin text-color-fade($color, $duration: 0.3s) {
+    color: $color;
+    transition: color $duration;
+  }
+
+  @mixin text-bounce {
+    animation: bounce 1s infinite ease-in-out;
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+  }
+
